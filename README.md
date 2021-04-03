@@ -29,6 +29,15 @@ This is a cheat sheet for bash shortcuts that help improving productivity.
 | `ctrl` + `w`     | Cut the word before the cursor to the clipboard |
 | `ctrl` + `y`     | Paste the last item to be cut                   |
 
+### History
+
+| Shortcut     | Description                       |
+| ------------ | --------------------------------- |
+| `ctrl` + `r` | Bring up the history search.      |
+| `ctrl` + `g` | Exit the history search.          |
+| `ctrl` + `r` | Show previous command in history. |
+| `ctrl` + `n` | Show next command in history.     |
+
 ## Commands
 
 To be done.
