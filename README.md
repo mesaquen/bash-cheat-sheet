@@ -40,4 +40,28 @@ This is a cheat sheet for bash shortcuts that help improving productivity. The c
 
 ## Commands
 
-To be done.
+### Git delete multiple branches
+
+```bash
+git branch | sed s/^..// | grep -v remainning_branch | xargs -L 1 -t -I {} git branch -D {}
+```
+
+If you need to keep more that one branch without being deleted, you can pass a series of items to `grep` portion of code using `grep -v -E "branch|anotherbrach"`.
+
+For instance, if you had the following branches on a project:
+
+```
+$ git branch
+* develop
+  feature-one
+  local
+  main
+  nwe-local
+  test-branch
+```
+
+If you want to delete all branches except for `develop` and `main`, the script you'd run is:
+
+```
+git branch | sed s/^..// | grep -v -E "main|develop" | xargs -L 1 -t -I {} git branch -D {}
+```
