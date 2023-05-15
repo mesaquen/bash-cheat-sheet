@@ -1,6 +1,6 @@
 # Bash Cheat Sheet
 
-This is a cheat sheet for bash shortcuts that help improving productivity. The commands were performed on a Debian 11 machine.
+Below is a list of helpful bash shortcuts to boost your productivity. These commands were executed on a Debian 11 operating system.
 
 ## Shortcuts
 
