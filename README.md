@@ -40,6 +40,12 @@ Below is a list of helpful bash shortcuts to boost your productivity. These comm
 
 ## Commands
 
+### Daily monitoring
+
+| Command    | Description                                            |
+| ---------- | ------------------------------------------------------ |
+| `ip -br a` | List all IPs from your local machine in a short format |
+
 ### Git delete multiple branches
 
 ```bash
@@ -62,6 +68,6 @@ $ git branch
 
 If you want to delete all branches except for `develop` and `main`, the script you'd run is:
 
-```
+```bash
 git branch | sed s/^..// | grep -v -E "main|develop" | xargs -L 1 -t -I {} git branch -D {}
 ```
